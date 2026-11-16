@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dce8">
+  <title>Bir kichkina xat 💌</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 24px 16px;
+      display: grid; place-items: center; overflow-x: hidden;
+      font-family: "Trebuchet MS", Arial, sans-serif; color: #633247;
+      background: linear-gradient(145deg, #fff0f5, #f9c8da 55%, #f5a9c5);
+    }
+    .wrap { width: min(100%, 470px); }
+    .topline { text-align: center; margin-bottom: 14px; color: #9d5270; font-size: 11px; letter-spacing: 3px; }
+    .card {
+      padding: 34px 27px 28px; border: 1px solid rgba(255,255,255,.85);
+      border-radius: 30px; background: rgba(255,255,255,.84);
+      box-shadow: 0 24px 70px rgba(132,48,82,.18);
+      text-align: center;
+    }
+    .mini-label {
+      display: inline-block; padding: 7px 13px; border-radius: 30px;
+      background: #ffe6ef; color: #b34b75; font-size: 11px; letter-spacing: 1.4px;
+    }
+    .seal {
+      width: 94px; height: 94px; margin: 22px auto 15px;
+      display: grid; place-items: center; border-radius: 50%;
+      background: linear-gradient(145deg, #fff7fa, #ffd7e5);
+      box-shadow: 0 10px 25px rgba(194,70,117,.15);
+      font-size: 43px; animation: heartbeat 1.8s ease-in-out infinite;
+    }
+    h1 { margin: 8px 0 10px; color: #873453; font: 500 clamp(35px,9vw,48px) Georgia,serif; }
+    .intro-text { max-width: 320px; margin: 0 auto; color: #916078; font-size: 15px; line-height: 1.8; }
+    button {
+      border: 0; border-radius: 999px; color: white;
+      background: linear-gradient(100deg, #d84d83, #ec78a1);
+      box-shadow: 0 9px 22px rgba(207,69,121,.25);
+      font: inherit; cursor: pointer; transition: transform .2s, box-shadow .2s;
+    }
+    button:hover { transform: translateY(-2px); box-shadow: 0 12px 25px rgba(207,69,121,.32); }
+    button:focus-visible { outline: 3px solid #a83e6c; outline-offset: 3px; }
+    .open-btn { margin-top: 25px; padding: 15px 27px; font-size: 15px; font-weight: 700; }
+    #letter { display: none; text-align: left; }
+    #letter.show { display: block; animation: letterIn .65s ease both; }
+    .letter-head { text-align: center; margin-bottom: 20px; }
+    .tiny-heart { color: #d94d83; font-size: 25px; }
+    .letter-head h2 { margin: 8px 0 0; color: #873453; font: 500 29px Georgia,serif; }
+    .letter-paper {
+      padding: 22px 19px; border-radius: 18px; border: 1px solid #f7dce6;
+      background: linear-gradient(145deg, #fffdfd, #fff6f9);
+      box-shadow: 0 5px 18px rgba(146,55,91,.06);
+    }
+    .letter-paper p { margin: 0; color: #765064; font-size: 15px; line-height: 1.9; overflow-wrap: anywhere; }
+    .actions { display: flex; justify-content: center; margin-top: 20px; }
+    .small-btn { padding: 11px 20px; font-size: 13px; }
+    .footer { margin-top: 17px; text-align: center; color: #a05d79; font-size: 11px; letter-spacing: 1px; }
+    @keyframes heartbeat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+    @keyframes letterIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 380px) { .card { padding: 27px 18px 23px; } .letter-paper { padding: 18px 15px; } }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topline">A LITTLE NOTE, JUST FOR YOU</div>
+    <div class="card">
+      <section id="intro">
+        <span class="mini-label">MAXSUS XAT</span>
+        <div class="seal" aria-hidden="true">💌</div>
+        <h1>Ranim</h1>
+        <p class="intro-text">Ochib o‘qi, bo‘q miyya..! Senga atab yozdim-ku 😭💞</p>
+        <button class="open-btn" id="openButton" type="button">Xatni och ♡</button>
+      </section>
+
+      <section id="letter" aria-live="polite">
+        <div class="letter-head">
+          <div class="tiny-heart" aria-hidden="true">♡</div>
+          <h2>Xotinjonm nyaa 💞😭</h2>
+        </div>
+        <div class="letter-paper">
+          <p>bilasanmi engg yaxshi koʻrgan engg hurmat qilgan engg ishonadiganim sensan , seni borliginga shukur rahmat , sen har doim paddejka qilgansan rahmat , sen har doim yonimda turib yaxshi gapirgansan , qiynalgan paytim nima qilishni orgatgansan , kichkina narsalardayam har doim yordam berasan , qo'linam shirin engg yaxshi korib yegan narsamni tayyorlagansan , sen tufayli oʻzimni oʻrnimni topib kimligimni chunib yetdmm rahmat , engg yaxshi maslahatlarni sen bergansan , men ybancha esa seni yaxshi koʻrib qolganman miyyamga nima kelsa shuni qilganman uzr bular uchun , osmirlik davrimdagi engg hurmat qilgan insonm vaa engg bogʻlanib qolgan insonimsan , sen bilan oxirgi oy yaxshi chiqisha olmayapmiz menimcha oldingidan ham yaxshi boʻlasan ishonaman , hozir esa boshqa bola bilan gaplashyapsan ekan maylm baxtli bol va sen baribir engg yaxshisisan dugonajonn:)😭💞</p>
+        </div>
+        <div class="actions">
+          <button class="small-btn" id="backButton" type="button">Xatni yopish</button>
+        </div>
+      </section>
+    </div>
+    <div class="footer">MADE WITH CARE 💗</div>
+  </main>
+
+  <script>
+    "use strict";
+    const intro = document.getElementById("intro");
+    const letter = document.getElementById("letter");
+    const openButton = document.getElementById("openButton");
+    const backButton = document.getElementById("backButton");
+
+    openButton.addEventListener("click", function () {
+      intro.style.display = "none";
+      letter.classList.add("show");
+    });
+
+    backButton.addEventListener("click", function () {
+      letter.classList.remove("show");
+      letter.style.display = "none";
+      intro.style.display = "block";
+    });
+  </script>
+</body>
+</html>
